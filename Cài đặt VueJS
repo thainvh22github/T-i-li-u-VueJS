@@ -1,0 +1,12 @@
+-- Cài đặt môi trường ---
+1: NodeJS
+https://nodejs.org/en/download/
+2: Mở terminal hoặc command prompt và cài đặt Vue CLI thông qua npm (Node Package Manager) bằng cách chạy lệnh sau:
+npm install -g @vue/cli
+3: Tạo một dự án Vue mới
+vue create "Tên dự án"
+4: Chạy dự án
+4.1: Di chuyển vào thư mục của dự án bạn vừa tạo
+cd my-vue-project
+4.2: Khởi động server để xem dự án của bạn bằng lệnh
+npm run serve
