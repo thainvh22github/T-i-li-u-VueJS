@@ -1,0 +1,20 @@
+Vòng đời của một ứng dụng Vue.js là quá trình mà các thành phần Vue (components), cũng như ứng dụng Vue của bạn, trải qua từ lúc chúng được tạo ra cho đến khi chúng bị hủy bỏ. 
+Có một số vòng đời chính trong Vue.js mà bạn cần biết:
+
+1. Khởi tạo (Initialization)
+Create: Khi một component Vue được khởi tạo, nó sẽ tạo các thành phần cần thiết, như data, computed properties, watchers, và lifecycle hooks.
+Mount: Component được kết hợp vào DOM, và Vue bắt đầu quan sát và cập nhật các biến dữ liệu.
+2. Update
+Reactivity: Khi có bất kỳ thay đổi nào trong data của component, Vue sẽ tự động cập nhật DOM để phản ánh các thay đổi đó (theo cơ chế reactivity).
+Render: Vue thực hiện quá trình render lại (re-render) component khi có sự thay đổi trong dữ liệu.
+3. Hủy (Destroy)
+Unmount: Khi component bị hủy bỏ hoặc không còn cần thiết, nó sẽ được "unmount" khỏi DOM.
+Cleanup: Các tài nguyên không cần thiết được giải phóng và các nguồn lực khác được dọn dẹp để tránh rò rỉ bộ nhớ.
+Các lifecycle hooks (các hàm vòng đời)
+Các hàm lifecycle hooks trong Vue.js cho phép bạn thực hiện các hành động vào các giai đoạn cụ thể của vòng đời component. Một số lifecycle hooks quan trọng:
+
+created: Được gọi khi component được tạo ra.
+mounted: Được gọi sau khi component được kết hợp vào DOM.
+updated: Được gọi sau khi DOM được cập nhật sau mỗi lần re-render.
+destroyed: Được gọi trước khi component bị hủy bỏ.
+Hiểu rõ về vòng đời của Vue.js là quan trọng để quản lý thành phần và tối ưu hóa hiệu suất của ứng dụng Vue của bạn, cũng như để xử lý các tình huống xảy ra trong quá trình phát triển.
