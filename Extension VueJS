@@ -1,0 +1,19 @@
+Khi làm việc với Vue.js trong môi trường phát triển, có một số extension hữu ích mà bạn có thể 
+cài đặt trong trình soạn thảo mã nguồn của mình để tăng cường trải nghiệm làm việc. 
+Dưới đây là một số extension phổ biến mà người dùng thường sử dụng khi làm việc với Vue.js:
+
+Vetur: Đây là extension cho Visual Studio Code hỗ trợ mạnh mẽ khi phát triển Vue.js. 
+Nó cung cấp syntax highlighting, IntelliSense (autocompletion), formatting, debugging và nhiều tính năng hỗ trợ khác cho Vue.js và các thành phần của nó.
+
+Vue VSCode Snippets: Cung cấp các snippet (đoạn mã mẫu) nhanh chóng cho Vue.js để viết code nhanh hơn và tránh phải gõ lại những cấu trúc cơ bản thường xuyên.
+
+ESLint và Prettier: Đây không phải là extension đặc biệt cho Vue.js, nhưng chúng hỗ trợ kiểm tra lỗi (ESLint) và format code (Prettier) một cách hiệu quả, giúp duy trì codebase sạch sẽ và tuân thủ các quy tắc viết code.
+
+Vue DevTools: Đây là một extension trong trình duyệt (chẳng hạn như cho Chrome hoặc Firefox) giúp bạn debug ứng dụng Vue một cách dễ dàng hơn, 
+quan sát các components, xem Vuex state, và theo dõi các thay đổi trong ứng dụng.
+
+Vue 3 Snippets: Đây là một extension cung cấp các snippet cho Vue 3, giúp viết code nhanh và tiết kiệm thời gian.
+
+Các extension này có thể được cài đặt thông qua trình cài đặt extension của trình soạn thảo mã nguồn mà bạn đang sử dụng, 
+chẳng hạn như Visual Studio Code, và có thể giúp tăng cường hiệu suất làm việc và làm cho quá trình phát triển Vue.js của bạn 
+trở nên dễ dàng và hiệu quả hơn.
