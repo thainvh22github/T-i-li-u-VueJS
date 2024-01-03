@@ -1,0 +1,78 @@
+Trong một file Vue component, bạn có thể định nghĩa một số thuộc tính quan trọng như sau:
+
+1. Data
+vue
+Copy code
+<script>
+export default {
+  data() {
+    return {
+      message: 'Hello Vue!',
+      items: [
+        { id: 1, name: 'Item 1' },
+        { id: 2, name: 'Item 2' },
+        // ...
+      ]
+    };
+  }
+};
+</script>
+data: Chứa dữ liệu mà component sử dụng. Bạn có thể sử dụng {{ message }} hoặc v-for="item in items" trong phần template để hiển thị dữ liệu này.
+2. Computed
+vue
+Copy code
+<script>
+export default {
+  data() {
+    return {
+      // ...
+    };
+  },
+  computed: {
+    // Một computed property sẽ tự động cập nhật khi các dependency thay đổi
+    computedMessage() {
+      return this.message.toUpperCase();
+    }
+  }
+};
+</script>
+computed: Chứa các computed properties, có thể tính toán dựa trên các giá trị khác và tự động cập nhật khi các giá trị này thay đổi.
+3. Methods
+vue
+Copy code
+<script>
+export default {
+  data() {
+    return {
+      // ...
+    };
+  },
+  methods: {
+    greet() {
+      alert(this.message);
+    }
+  }
+};
+</script>
+methods: Chứa các methods (phương thức) để thực hiện các hành động như xử lý sự kiện hoặc logic phức tạp khác.
+4. Lifecycle Hooks
+vue
+Copy code
+<script>
+export default {
+  data() {
+    return {
+      // ...
+    };
+  },
+  created() {
+    console.log('Component created');
+  },
+  mounted() {
+    console.log('Component mounted');
+  },
+  // ...
+};
+</script>
+Các hooks như created, mounted, updated, và destroyed cho phép bạn thực hiện các hành động vào các giai đoạn cụ thể trong vòng đời của component.
+Mỗi phần này (data, computed, methods, lifecycle hooks) có thể được đặt trong phần script của một file Vue component để quản lý các logic và hiển thị của component đó.
